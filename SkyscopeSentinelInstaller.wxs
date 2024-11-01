@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+  <Product Id="*" Name="Skyscope Sentinel Entrepreneur" Language="1033" Version="1.0.0.0" Manufacturer="Skyscope Sentinel Intelligence" UpgradeCode="PUT-GUID-HERE">
+    <Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
+
+    <Media Id="1" Cabinet="media1.cab" EmbedCab="yes" />
+
+    <Directory Id="TARGETDIR" Name="SourceDir">
+      <Directory Id="ProgramFilesFolder">
+        <Directory Id="INSTALLFOLDER" Name="Skyscope Sentinel Entrepreneur">
+          <Component Id="MainExecutable" Guid="PUT-GUID-HERE">
+            <File Id="SkyscopeSentinelEntrepreneur.py" Source="SkyscopeSentinelEntrepreneur.py" />
+            <File Id="requirements" Source="requirements.txt" />
+          </Component>
+        </Directory>
+      </Directory>
+    </Directory>
+
+    <Feature Id="DefaultFeature" Level="1">
+      <ComponentRef Id="MainExecutable" />
+    </Feature>
+
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+    <UIRef Id="WixUI_ErrorProgressText" />
+
+    <CustomAction Id="InstallRequirements" Directory="INSTALLFOLDER" ExeCommand="cmd /c &quot;python -m pip install -r requirements.txt&quot;" Return="ignore" />
+
+    <InstallExecuteSequence>
+      <Custom Action="InstallRequirements" After="InstallFiles">NOT Installed</Custom>
+    </InstallExecuteSequence>
+  </Product>
+</Wix>
