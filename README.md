@@ -38,7 +38,7 @@ Enter the directory cloned 'cd Skyscope-Sentinel-AI-Entrepreneur'
 
 ### **Step 3: Set up LLM/s**
 Ensure you have installed ollama already
-Download locally the required ollama model 'ollama pull internlm2.5:latest'
+Download locally the required ollama model 'ollama pull internlm/internlm2.5'
 
 Usage
 -----
@@ -94,4 +94,4 @@ Note on Model Configuration
 
 This application uses an Ollama model (internml2.5). Adjust the model\_name variable in the code if using a different Ollama model.
 
-To ensure the python application will work without error please ensure you have ollama installed and lastly ensure you have performed ‘ollama pull internml2.5:latest’
+To ensure the python application will work without error please ensure you have ollama installed and lastly ensure you have performed ‘ollama pull internlm/internlm2.5’
