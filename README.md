@@ -1,7 +1,7 @@
 Skyscope Sentinel Multi-Agent AI Entrepreneur Researcher and Autonomous Agent
 ==============================================================================
 
-**Developed By:** Casey J. Topojani**License:** MIT
+**Developed By:** Casey J. Topojani** License:** MIT
 
 Overview
 --------
@@ -33,7 +33,12 @@ pip install streamlit click langchain crewai crewai-tools duckduckgo-search olla
 
 ### **Step 2: Download the Code**
 
-Clone the repository or copy the script code into a local Python file.
+Clone the repository by running 'git clone https://github.com/skyscope-sentinel/Skyscope-Sentinel-AI-Entrepreneur.git'
+Enter the directory cloned 'cd Skyscope-Sentinel-AI-Entrepreneur'
+
+### **Step 3: Set up LLM/s**
+Ensure you have installed ollama already
+Download locally the required ollama model 'ollama pull internlm2.5:latest'
 
 Usage
 -----
