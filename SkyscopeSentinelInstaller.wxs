@@ -8,7 +8,7 @@
     <Directory Id="TARGETDIR" Name="SourceDir">
       <Directory Id="ProgramFilesFolder">
         <Directory Id="INSTALLFOLDER" Name="Skyscope Sentinel Entrepreneur">
-          <Component Id="MainExecutable" Guid="PUT-GUID-HERE">
+          <Component Id="MainExecutable" Guid="d4d9602a-87a5-4713-a5a0-c9e3f8aa8819">
             <File Id="SkyscopeSentinelEntrepreneur.py" Source="SkyscopeSentinelEntrepreneur.py" />
             <File Id="requirements" Source="requirements.txt" />
           </Component>
