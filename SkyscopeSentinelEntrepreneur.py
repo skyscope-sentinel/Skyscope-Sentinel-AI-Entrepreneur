@@ -20,7 +20,7 @@ from tqdm import tqdm
 import time
 
 # --- Configuration ---
-model_name = "internml2.5"  # Specify the Ollama model version
+model_name = "internlm2.5"  # Specify the Ollama model version
 research_topic_default = "Automated passive income generating from home online crypto income solution"
 
 # --- Functions ---
@@ -171,7 +171,8 @@ def streamlit_app():
 def cli_app(topic):
     """Defines the Click CLI."""
     print("Skyscope Sentinel Multi-Agent AI Entrepreneur")
-    print("Developed by: Casey J. Topojani")
+    print("Developed by: Skyscope Sentinel Intelligence")
+    print("Developer: Casey J Topojani")
     print("License: MIT")
 
     if not check_ollama_installed():
