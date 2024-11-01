@@ -68,6 +68,15 @@ Enter your research topic when prompted
 
 The AI will generate and display the research report and implementation plan in the console
 
+### Customisation and Creating .msi App
+
+1. Install the WiX Toolset
+2. Run the command: candle SkyscopeSentinelInstaller.wxs
+3. Link to create the .msi installer: light -out SkyscopeSentinelGenAISuiteInstaller.msi SkyscopeSentinelInstaller.wixobj
+
+After this, you’ll have SkyscopeSentinelGenAISuiteInstaller.msi ready for installation and/or distribution.
+
+
 Contributing
 ------------
 
