@@ -1,61 +1,83 @@
-**Skyscope Sentinel Multi Agent AI Entrepreneur**
-**Crypto Income Solution Generator**
+Skyscope Sentinel Multi-Agent AI Entrepreneur Researcher and Autonomous Agent
+==============================================================================
 
-Skyscope Sentinel is a multi-agent AI application that helps you research, develop, and implement a six-figure automated passive income solution focused on cryptocurrency, generating from home online.
+**Developed By:** Casey J. Topojani**License:** MIT
 
-This application combines the power of open-source language models with the collaborative capabilities of CrewAI to create a comprehensive and actionable plan for your crypto income goals.
+Overview
+--------
 
-Developed By: Casey J Topojani
-License: MIT
+The **Skyscope Sentinel Multi-Agent AI Entrepreneur** is a powerful application designed to help users research, develop, and implement a six-figure automated passive income solution focused on cryptocurrency, all from the comfort of home. Leveraging the strengths of open-source language models and the collaborative features of CrewAI, this application provides an actionable roadmap to achieve crypto income goals.
 
-**Features**
+Features
+--------
 
-Research and Development: Utilizes AI agents to research existing crypto income solutions, identify opportunities, and generate specific implementation steps.
-Actionable Plan: Creates a detailed implementation plan outlining steps, resources, and tools needed for success.
-Beginner-Friendly: Targets users with minimal technical experience, providing clear and easy-to-understand instructions.
-WebUI and CLI: Offers both interactive web (Streamlit) and command-line (Click) interfaces.
-Progress Tracking: Displays a live progress bar and detailed verbose output, providing insight into the AI's actions.
+*   **Research and Development**: AI-driven agents research existing crypto income strategies, analyze opportunities, and generate concrete steps for implementation.
+    
+*   **Actionable Plan**: Produces a detailed, beginner-friendly plan with specific resources, tools, and instructions.
+    
+*   **Beginner-Friendly**: Designed for users with minimal technical experience, offering clear, accessible instructions.
+    
+*   **WebUI and CLI**: Access the tool via an interactive web interface (Streamlit) or through a command-line interface (Click).
+    
+*   **Progress Tracking**: Real-time progress tracking with a live progress bar and verbose output to monitor the AI's actions and task progression.
+    
 
-**Installation**
+Installation
+------------
 
-Install Dependencies:
+### **Step 1: Install Dependencies**
+
+Ensure you have the required Python packages installed:
 
 pip install streamlit click langchain crewai crewai-tools duckduckgo-search ollama tqdm
 
-Download the Code:
+### **Step 2: Download the Code**
 
-Download this repository or copy the code directly into a Python file.
+Clone the repository or copy the script code into a local Python file.
 
-**Usage**
+Usage
+-----
 
-1. Streamlit Web UI:
-   
-streamlit run your_script_name.py
+### Streamlit Web UI
 
-Enter your research topic in the text input field.
+1.  Launch the Streamlit app:
+    
 
-Click "Generate Solution" to start the process.
+streamlit run SkyscopeSentinelEntrepreneur.py
 
-View the detailed research report and implementation plan in the results section.
+1.  Enter your research topic in the input field.
+    
+2.  Click "Generate Solution" to initiate the research process.
+    
+3.  View the generated research report and implementation plan in the results section.
+    
 
-2. Click CLI:
+### Command-Line Interface (CLI)
 
-python your_script_name.py
+1.  Run the CLI version:
+    
 
-The script will prompt you to enter your research topic.
+python SkyscopeSentinelEntrepreneur.py
 
-The AI will generate the research report and implementation plan, displayed in the console.
+Enter your research topic when prompted
 
-**Contributing**
+The AI will generate and display the research report and implementation plan in the console
 
-Contributions are welcome! Please open an issue or submit a pull request if you have any suggestions or improvements.
+Contributing
+------------
 
-**Disclaimer**
+Contributions are welcome! Please open an issue or submit a pull request with suggestions or improvements.
 
-Skyscope Sentinel Intelligence provides this open-source application as a valuable resource for the community. While we strive to offer helpful and informative tools, it is important to understand that this application is intended for educational and informational purposes only.
-Always adhere to your local jurisdictions' laws and regulations.
+Disclaimer
+----------
 
-Skyscope Sentinel Intelligence is not responsible for any misuse, malicious use, or illegal activities involving this code. Users are solely responsible for ensuring their actions comply with all applicable laws and regulations. We strongly advise against using this application for any unethical or harmful purposes.
-This application is not intended to provide financial, legal, or other professional advice. Always do your own research and consult with qualified professionals before making any investment, business, or legal decisions.
+**Skyscope Sentinel Intelligence** provides this open-source application as a community resource for educational and informational purposes only. Users are responsible for ensuring their actions comply with all local laws and regulations. This application is not intended to offer financial, legal, or professional advice. Always do your own research and consult qualified professionals before making any investment or business decisions.
 
-Note: The application uses an Ollama model ("internal-m2"). You may need to adjust the model_name variable in the code if you are using a different Ollama model.
+Skyscope Sentinel Intelligence disclaims responsibility for any misuse, malicious use, or illegal activities involving this code. Users are solely responsible for ensuring ethical use of this application.
+
+Note on Model Configuration
+---------------------------
+
+This application uses an Ollama model (internml2.5). Adjust the model\_name variable in the code if using a different Ollama model.
+
+To ensure the python application will work without error please ensure you have ollama installed and lastly ensure you have performed ‘ollama pull internml2.5:latest’
